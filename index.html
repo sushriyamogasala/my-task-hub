@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list</title>
+    <!-- Font links starts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+	<!-- Font links end -->
+     <!-- font awesome cdn link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Default CSS starts-->
+    <link rel="stylesheet" href="main.css">
+    <!-- Defatult CSS ends-->
+</head>
+<body>
+
+    <main class="app">
+        <section class="greeting">
+            <h2 class="title">
+               Welcome !! What's up for today <i class="far fa-handshake"></i><input 
+                                type="text" 
+                                name="name" 
+                                id="name" 
+                                placeholder="Name here" required >
+            </h2>
+            <section class="create-todo">
+                <h3> <i class="fa-solid fa-list"></i> CREATE A TODO </h3>
+                <form action="" id="new-todo-form">
+                    <h4>  What's on your todo list today <i class="fa-solid fa-square-plus"></i></h4>
+                    <input 
+                        type="text" 
+                        name="content" 
+                        id="content" 
+                        placeholder="E.g Create a website" required>
+
+                    <h4> <i class="fa-solid fa-circle-check"></i> Pick a category</h4>
+                    <div class="options">
+                        <label class="business">
+                            <input  
+                                type="radio" 
+                                name="category" 
+                                id="category1" 
+                                value="business">
+                            <span class="bubble business"></span>
+                            <div>Business</div>
+                        </label>
+                        <label class="personal">
+                            <input 
+                                type="radio" 
+                                name="category" 
+                                id="category2" 
+                                value="personal">
+                            <span class="bubble personal"></span>
+                            <div>Personal</div>
+                        </label>
+                        <label class="others">
+                            <input 
+                                type="radio"
+                                name="category"
+                                id="category3"
+                                value="Others">
+                                <span class="bubble others"></span>
+                                <div>Others</div>
+                            </label>
+                    </div>
+                    <input type="submit" value="Add To-Do">
+                </form>
+            </section>
+            <section class="todo-list">
+                <h3> <i class="fa-solid fa-list-check"></i> ToDo LIST</h3>
+                <div class="list" id="todo-list">
+                    <div class="todo-item done">
+                        <label for="">
+                            <input type="checkbox" name="" id=""/>
+                            <span class="bubble business"></span>
+                        </label>
+                        <div class="todo-content">
+                            <input 
+                                type="text" 
+                                name="" 
+                                id="" 
+                                value="Make a website" 
+                                readonly/>
+
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div>
+                    <div class="todo-item done">
+                        <label for="">
+                            <input type="checkbox" name="" id="">
+                            <span class="bubble personal"></span>
+                        </label>
+                        <div class="todo-content">
+                            <input 
+                                type="text" 
+                                name="" 
+                                id="" 
+                                value="Buy groceries"
+                                readonly/>
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div>
+                    <div class="todo-item done">
+                        <label for="">
+                            <input type="checkbox" name="" id="">
+                            <span class="bubble others"></span>
+                        </label>
+                        <div class="todo-content">
+                            <input 
+                                type="text" 
+                                name="" 
+                                id="" 
+                                value="Contact plumber"
+                                readonly/>
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>            
+            </section>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
